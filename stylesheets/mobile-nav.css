@@ -1,0 +1,31 @@
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: var(--txt);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#mobile-nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+#mobile-nav-menu hr {
+    width: 235px;
+}
+.mobile-link {
+   font-size: var(--size-lg); 
+   text-decoration: none;
+   color: white;
+}
+.mobile-link:hover {
+    color: var(--txt2);
+}

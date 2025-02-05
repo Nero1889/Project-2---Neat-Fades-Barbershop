@@ -1,0 +1,14 @@
+#story-title {
+    text-align: center;
+    font-size: var(--size-3xl);
+}
+.story-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+#story-desc {
+    width: 30ch;
+}
