@@ -6,8 +6,9 @@
 :root {
     /* Color Theme */
     --bg-color: white;
-    --txt: #0f0f0f;
+    --txt: #797979;
     --txt2: #b71234;
+    --drk-txt: #0f0f0f;
 
     /* Sizes */
     --size-xss: 0.5rem;
@@ -26,12 +27,14 @@
     --size-9xl: 8rem;
     --size-10xl: 10rem;
 }
+.dark-mode {
+    --bg-color: #0f0f0f;
+}
 html {
     scroll-behavior: smooth;
 }
 body {
-    background: linear-gradient(to right,black,
-    #0f0f0f, black);
+    background: var(--bg-color);
     font-family: "Montserrat", "Roboto", Arial,
     Helvetica, sans-serif;
     color: white;
