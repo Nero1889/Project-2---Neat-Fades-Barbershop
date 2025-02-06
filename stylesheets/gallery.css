@@ -13,18 +13,18 @@
     background-clip: text;
     color: transparent;
     font-weight: 500;
-    padding-top: 60px;
+    padding-top: 60px;    
 }
 #img-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+    margin-top: -5rem;
 }
 .gallery-imgs {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.432);
 }
-
 
 /* xxs = (extra extra small)  */
 @media (min-width: 320px) {
