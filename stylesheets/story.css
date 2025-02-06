@@ -16,8 +16,6 @@
 .story-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
-    margin-top: -5rem;
 }
 #story-desc {
     width: 35ch;
@@ -52,6 +50,15 @@
     .story-bg-img {
         display: none;
     }
+    .story-container {
+        gap: 2rem;
+    }
+    .story-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -3rem;
+        padding-bottom: 50px;
+    }
 }
 
 /* xs = (extra small) */
@@ -65,6 +72,9 @@
     #story-desc {
         font-size: var(--size-sm);
     }
+    .story-container {
+        gap: 4rem;
+    }
 } 
 
 /* sm = (small) */
@@ -74,6 +84,10 @@
     }
     .section {
         margin-top: 4rem;
+    }
+    .story-container {
+        margin-top: -5rem;
+        padding-bottom: 50px;
     }
 }
 
