@@ -74,6 +74,12 @@ img, picture, video, canvas, svg {
     align-items: center;
     justify-content: center;
 }
+.center-text {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: 1px solid red;
+}
 
 /* xxs = (extra extra small) */
 @media (min-width: 320px) {
