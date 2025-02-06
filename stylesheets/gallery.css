@@ -4,7 +4,6 @@
     padding-bottom: 40px;   
 }
 #gallery-title {
-    text-align: center;
     font-size: var(--size-3xl);
     margin-bottom: 4rem;
     background: linear-gradient(to right, #aa6f00,
