@@ -2,16 +2,16 @@
     padding-top: 10px;
 }
 #story-title {
-    text-align: center;
     font-size: var(--size-3xl);
     margin-bottom: 4rem;
     background: linear-gradient(to right, #aa6f00,
     #bb6a00, #aa6f00);
     display: flex;
-    justify-self: center;
+    /* justify-self: center; */
     background-clip: text;
     color: transparent;
     font-weight: 500;
+    text-align: center;
 }
 .story-container {
     display: flex;
