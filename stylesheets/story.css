@@ -11,11 +11,13 @@
     background-clip: text;
     color: transparent;
     font-weight: 500;
+    margin-top: 3rem;
 }
 .story-container {
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
+    margin-top: -5rem;
 }
 #story-desc {
     width: 35ch;
