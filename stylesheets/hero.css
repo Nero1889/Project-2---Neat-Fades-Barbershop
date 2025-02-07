@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Text:ital@0;1&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@300..700&family=DM+Serif+Text:ital@0;1&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-#hero-title a {
+#font {
    font-family: "DM Serif Text";
+   font-weight: 700;
 }
 .img-container {
     position: relative;
@@ -31,23 +32,35 @@
 #hero-title {
     margin-top: 58px;
     text-align: center;
-    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-family: "Anton", "Roboto Condensed", Arial, sans-serif;
     background: linear-gradient(to left, #0f0f0f,
     #55514a, #0f0f0f);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 100;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.445);
 }
 
 /* xxs = (extra extra small)  */
 @media (min-width: 320px) {
+    #font {
+        font-size: var(--size-base);
+        letter-spacing: 0;
+    }
     #hero-title #gallery-title {
         font-size: var(--size-2xl);
+    }
+    #hero-title {
+        line-height: 2rem;
+        letter-spacing: .1rem;
     }
 }
 
 /* xs = (extra small) */
 @media (min-width: 475px) {
+    #font {
+        font-size: var(--size-lg);
+    }
     #hero-title {
         font-size: var(--size-3xl);
     }
@@ -58,8 +71,13 @@
 
 /* sm = (small) */
 @media (min-width: 640px) {
+    #font {
+        font-size: var(--size-2xl);
+    }
     #hero-title {
         font-size: var(--size-4xl);
+        line-height: 2.3rem;
+        letter-spacing: .35rem;
     }
     .image-container, #hero-est {
         font-size: var(--size-base);
@@ -68,8 +86,12 @@
 
 /* lg = (large) */
 @media (min-width: 1024px) {
+    #font {
+        font-size: var(--size-4xl);
+    }
     #hero-title {
         font-size: var(--size-5xl);
+        line-height: 3.5rem;
     }
     .image-container, #hero-est {
         font-size: var(--size-xl);
@@ -78,8 +100,12 @@
 
 /* xl = (extra large) */
 @media (min-width: 1280px) {
+    #font {
+        font-size: var(--size-5xl);
+    }
     #hero-title {
         font-size: var(--size-6xl);
+        line-height: 4.7rem;
     }
     .image-container, #hero-est {
         font-size: var(--size-2xl);
