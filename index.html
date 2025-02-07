@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neat Fades Barbershop</title>
+    <title>Neat Fades Barbershop - Home</title>
     <link rel="icon" href="images/neatFadesLogo.jpeg">
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/mobile-nav.css">
@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="stylesheets/hero.css">
     <link rel="stylesheet" href="stylesheets/story.css">
     <link rel="stylesheet" href="stylesheets/gallery.css">
-    <link rel="stylesheet" href="stylesheets/location.css">
+    <link rel="stylesheet" href="stylesheets/info.css">
+    <link rel="stylesheet" href="stylesheets/contact.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
 </head>
 <body>
     <header class="header">
@@ -22,9 +24,9 @@
         <nav class="navbar">
             <ul class="header-menu">
                 <li><a class="header-link" href="index.html">Home</a></li>
-                <li><a class="header-link" href="#">Services</a></li>
-                <li><a class="header-link" href="#">Barbers and Scheduling</a></li>
-                <li><a class="header-link" href="#">Hours and Location</a></li>
+                <li><a class="header-link" href="services.html">Services</a></li>
+                <li><a class="header-link" href="barb-sche.html">Barbers and Scheduling</a></li>
+                <li><a class="header-link" href="hrs-loc.html">Hours and Location</a></li>
                 <li title="Change Theme!">
                     <button class="theme-toggle" id="sun">☼</button>
                 </li>
@@ -32,40 +34,41 @@
             <button id="header-bars" class="remove-btn">☰</button>
         </nav>
     </header> 
-        <!-- Movile Navigation -->
-        <div id="mobile-nav">
-            <nav>
-                <ul id="mobile-nav-menu">
-                    <li><a class="mobile-link" href="index.html">Home</a></li><hr>
-                    <li><a class="mobile-link" href="#">Services</a></li><hr>
-                    <li>
-                        <a class="mobile-link" href="#">Barbers and Scheduling</a>
-                    </li><hr>
-                    <li><a class="mobile-link" href="#">Hours and Location</a></li><hr>
-                    <li title="Change Theme!">
-                        <button class="theme-toggle" id="sun"><svg
-                        xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960
-                        960 960" width="40px" fill="#797979"><path
-                        d="M446.67-806.67V-920h66.66v113.33h-66.66Zm0
-                        766.67v-113.33h66.66V-40h-66.66Zm360-406.67v-66.66H920v66.66H806.67Zm-766.67
-                        0v-66.66h113.33v66.66H40Zm704-250.66-47.33-47.34 67.33-68 48 48-68 67.34Zm-548
-                        550-48-48 68-67.34 47.33 47.34-67.33 68Zm568 0-67.33-68L744-262.67l68 67.34-48
-                        48Zm-548-550-68-67.34 48-48 67.33 68L216-697.33ZM479.88-250Q384-250
-                        317-317.12t-67-163Q250-576 317.12-643t163-67Q576-710 643-642.88t67
-                        163Q710-384 642.88-317t-163 67Zm.08-66.67q68.37 0 115.87-47.45
-                        47.5-47.46 47.5-115.84 0-68.37-47.45-115.87-47.46-47.5-115.84-47.5-68.37
-                        0-115.87 47.45-47.5 47.46-47.5 115.84 0 68.37 47.45 115.87 47.46 47.5
-                        115.84 47.5ZM480-480Z"/></svg></button>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <!-- End of Movile Navigation -->
+    <!-- Movile Navigation -->
+    <div id="mobile-nav">
+        <nav>
+            <ul id="mobile-nav-menu">
+                <li><a class="mobile-link" href="index.html">Home</a></li><hr>
+                <li><a class="mobile-link" href="#">Services</a></li><hr>
+                <li>
+                    <a class="mobile-link" href="#">Barbers and Scheduling</a>
+                </li><hr>
+                <li><a class="mobile-link" href="#">Hours and Location</a></li><hr>
+                <li title="Change Theme!">
+                    <button class="theme-toggle" id="sun"><svg
+                    xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960
+                    960 960" width="40px" fill="#797979"><path
+                    d="M446.67-806.67V-920h66.66v113.33h-66.66Zm0
+                    766.67v-113.33h66.66V-40h-66.66Zm360-406.67v-66.66H920v66.66H806.67Zm-766.67
+                    0v-66.66h113.33v66.66H40Zm704-250.66-47.33-47.34 67.33-68
+                    48 48-68 67.34Zm-548 550-48-48 68-67.34 47.33 47.34-67.33 68Zm568
+                    0-67.33-68L744-262.67l68 67.34-48 48Zm-548-550-68-67.34 48-48 67.33
+                    68L216-697.33ZM479.88-250Q384-250 317-317.12t-67-163Q250-576
+                    317.12-643t163-67Q576-710 643-642.88t67 163Q710-384 642.88-317t-163
+                    67Zm.08-66.67q68.37 0 115.87-47.45 47.5-47.46 47.5-115.84
+                    0-68.37-47.45-115.87-47.46-47.5-115.84-47.5-68.37 0-115.87 47.45-47.5
+                    47.46-47.5 115.84 0 68.37 47.45 115.87 47.46 47.5 115.84
+                    47.5ZM480-480Z"/></svg></button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End of Movile Navigation -->
     <main>
         <section class="hero">
             <div class="img-container">
                 <img id="hero-img" src="images/heroBgImg.png" src="Hero Image">
-                <h1 id="hero-title">- Neat Fades -<br>BARBERSHOP</h1> 
+                <h1 id="hero-title"><a>- Neat Fades -</a><br>BARBERSHOP</h1> 
             </div>
             <h3 id="hero-est">Est. 2020</h3>
         </section>
@@ -117,15 +120,105 @@
                 </div>
         </section>
         </div>
+        <div class="b">
+        <section class="info container section">
+            <div id="card-container">
+                <div class="card">
+                    <div id="img-container">
+                        <img class="card-icon" src="icons/Scissors.png"
+                        alt="Scissor Icon">
+                    </div>
+                    <h3 class="card-title">Special Instructions</h3>
+                    <p class="card-desc">You may want to bring pictures, videos, or
+                    anything else that could assist in describing the haircut style you
+                    want!</p>
+                </div>
+                <div class="card">
+                    <div id="img-container">
+                        <img class="card-icon" src="icons/Wifi.png" alt="Wifi Icon">
+                    </div>
+                    <h3 class="card-title">Ameneties</h3>
+                    <p class="card-desc">WiFi, TV, Vending Machine, Quality Seats,
+                    Mirrors, lighting and equipment.</p>
+                </div>
+                <div class="card">
+                    <div id="img-container">
+                        <img class="card-icon" src="icons/speak.png" alt="Speak Icon">
+                    </div>
+                    <h3 class="card-title">Spoken Languages</h3>
+                    <p class="card-desc" id="lang">English and Spanish</p>
+                </div>
+                <div class="card">
+                    <div id="img-container">
+                        <img class="card-icon" src="icons/calendar.png" alt="Calendar">
+                    </div>
+                    <h3 class="card-title">Appointments</h3>
+                    <p class="card-desc">Walk-in appointments are welcome! However we
+                    encourage you to schedule one in advance!</p>
+                </div>
+                <div class="card">
+                    <div id="img-container">
+                        <img class="card-icon" src="icons/cancellation.png"
+                        alt="Cancellation Icon">
+                   </div>
+                    <h3 class="card-title">Cancellation Policy</h3>
+                    <p class="card-desc">If you need to cancel your appointment, please
+                    do so two hours in advance in order to avoid being put on the list of
+                    no-show or no-call.</p>
+                </div>
+            </div>
+        </section>
+        </div>
         <div class="center-text">
             <h1 id="contact-title">Contact</h1>
         </div>
+        <img class="contact-bg-img" src="images/contactBgImg.jpg"
+        alt="Contact Background">
         <section class="contact container section">
-            
+            <div class="contact-container">
+                <form id="form">
+                    <div id="contact1-form">
+                        <input type="text" class="form" name="fname"
+                        placeholder="Name" required="required">
+
+                        <input type="email" class="form" name="email"
+                        placeholder="Email">
+                    </div><br>
+                    <div id="contact2-form">
+                        <input type="text" class="form" name="subject"
+                        required="required" placeholder="Subject">
+                        <input type="text" class="form" name="subject"
+                        required="required" placeholder="Message">
+                    </div>
+                    <div id="btn-container">
+                        <button class="contact-btns" type="submit">Submit</button>
+                        <button class="contact-btns" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
-
-    <footer>
+    <footer class="footer section">
+        <a id="top-icon" href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" height="44px"
+            viewBox="0 -960 960 960" width="44px" fill="#e8eaed">
+            <path d="M440-320h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168Zm40
+            240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54
+            127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5
+            156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0
+            227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227
+            93Zm0-320Z"/></svg>
+        </a>
+        <div class="footer-links">
+            <a title="GitHub" href="https://github.com/Nero1889" target="_blank">
+                <img id="github" src="images/github.png" alt="GitHub Logo">
+            </a>
+            <a title="Gmail" href="mailto:mceclipse1889@gmail.com">
+                <img id="gmail" src="images/gmail.png" alt="Gmail Logo">
+            </a>
+        </div>
+        <h3 id="footer-title">~ Made and Edited By: Raul Luna ~</h3>
+        <h3 id="footer-title">© 2025 Neat Fades Barbershop</h3>
         <script src="index.js"></script>
     </footer>
 </body>
