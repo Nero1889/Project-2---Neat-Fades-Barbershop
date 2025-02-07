@@ -1,8 +1,4 @@
-.b {
-    background-color: var(--bg-color);
-}
 #card-container {
-    /* border: 2px solid #b71234; */
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -12,7 +8,7 @@
 .card {
     background-color: #181818;
     width: 15em;
-    height: 17.5em;
+    height: fit-content;
     padding: 12px;
     transition: background-color .3s;
 }
@@ -41,4 +37,40 @@
 }
 #lang {
     text-align: center;
+}
+
+/* xxs = (extra extra small)  */
+@media (min-width: 320px) {
+    .card {
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+    #card-container {
+        margin-bottom: 14rem;
+    }
+}
+
+/* sm = (small) */
+@media (min-width: 640px) {
+    .card {
+        height: 17em;
+        padding-bottom: 30px;
+    }
+    #card-container {
+        margin-bottom: 17rem;
+    }
+}
+
+/* lg = (large) */
+@media (min-width: 1024px) {
+    #card-container {
+        margin-bottom: 18rem;
+    }
+}
+
+/* xl = (extra large) */
+@media (min-width: 1280px) {
+    #card-container {
+        margin-bottom: 20rem;
+    }
 }
