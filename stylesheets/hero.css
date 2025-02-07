@@ -51,7 +51,7 @@
         font-size: var(--size-2xl);
     }
     #hero-title {
-        line-height: 2rem;
+        line-height: 1.5rem;
         letter-spacing: .1rem;
     }
 }
@@ -63,6 +63,7 @@
     }
     #hero-title {
         font-size: var(--size-3xl);
+        line-height: 1.9rem;
     }
     .image-container, #hero-est {
         font-size: var(--size-sm);
