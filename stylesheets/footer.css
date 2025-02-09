@@ -1,20 +1,3 @@
-/* .footer {
-    background-color: #b71234;
-    text-align: center;
-    padding: 50px;
-    font-weight: normal;
-} */
-
-.footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--drk-txt);
-    color: var(--txt);
-    padding: 10px;
-    padding-bottom: 50px;
-    margin-top: 10rem;
-}
 #top-icon {
     position: absolute;
     margin-top: 2.3rem;
