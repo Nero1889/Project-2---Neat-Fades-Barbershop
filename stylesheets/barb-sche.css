@@ -1,0 +1,242 @@
+body {
+    background-color: var(--bg-color);
+}
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/barb-scheBgImg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 20%;
+    z-index: -1;
+}
+.barb-sche { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.barbers-title {
+    color: var(--theme-txt);
+    animation: opacity 1s;
+} 
+.barbers {
+    gap: 2rem;
+}
+.barber-img {
+    width: 300px;
+    animation: opacity .2s;
+}
+.barbers-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.barber-title {
+    color: var(--theme-txt);
+    font-weight: normal;
+    animation: opacity .4s;
+}
+.schedule-btn {
+    padding: 10px;
+    width: 140px;
+    background-color: var(--theme-txt);
+    border: none;
+    margin-bottom: 1rem;
+    font-family: "Montserrat", "Roboto", Arial,
+    Helvetica, sans-serif;
+    animation: opacity .7s;
+}
+.schedule-btn a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+.schedule-btn:hover {
+    background-color: var(--bg-color);
+}
+
+.schedule-btn:hover a {
+    color: var(--theme-txt);
+}
+.barber-avail, .barber-contact {
+    animation: opacity 1s;
+}
+.barbers-desc {
+    width: 60ch;
+    line-height: 1.4rem;
+    font-weight: bold;
+    animation: opacity 1.5s;
+}
+.image-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.img {
+    width: 110px;
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.img.loaded {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--drk-txt);
+    color: var(--txt);
+    padding: 10px;
+    padding-bottom: 50px;
+    margin-top: 10rem;
+}
+
+/* xxs = (extra extra small) */
+@media (min-width: 320px) {
+    #barbers-container {
+        margin-top: 15em;
+    }
+    .barbers-title {
+        font-size: var(--size-4xl);
+        margin-bottom: 2rem;
+    }
+    .barbers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .barbers-info {
+        width: 100%;
+    }
+    .barber-title {
+        font-size: var(--size-2xl);
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+    .barber-avail, .barber-contact {
+        font-size: var(--size-base);
+        margin-bottom: .3rem;
+        text-align: center;
+        width: 20ch;
+    }
+    .barbers-desc {
+        font-size: var(--size-base);
+        width: 20ch;
+        margin-bottom: 1rem;
+    }
+    .image-container {
+        width: 300px;
+        margin-bottom: 5rem;
+    }
+}
+
+/* xs = (extra small) */
+@media (min-width: 475px) {
+    .barbers-title {
+        font-size: var(--size-5xl);
+    }
+    .barber-title {
+        font-size: var(--size-3xl);
+    }
+    .barber-avail, .barber-contact {
+        font-size: var(--size-lg);
+        width: auto;
+    }
+    .barbers-desc {
+        font-size: var(--size-base);
+        width: 30ch;
+    }
+    .image-container {
+        width: 380px;
+    }
+}
+
+/* md = (medium) */
+@media (min-width: 768px) {
+    .barbers-title {
+        font-size: var(--size-6xl);
+        margin-bottom: 1rem;
+    }
+    .barbers {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: start; 
+        gap: 2rem;
+        width: auto;
+        margin-top: 4rem;
+    }
+    .barbers-img-container {
+        width: auto;
+    }
+    .barber-img {
+        width: 300px;
+    }
+    .barbers-title {
+        text-align: left;
+    }
+    .barber-avail {
+        text-align: left;
+    }
+    .barbers-info {
+        display: flex;
+        align-items: start;
+        width: auto;
+    }
+    .barbers-desc {
+        width: 35ch;
+        line-height: 1.5rem;
+    }
+    .image-container {
+        margin-top: 1rem;
+        width: 600px;
+    }
+}
+
+/* lg = (large) */
+@media (min-width: 1024px) {
+    .barbers-title {
+        font-size: var(--size-7xl);
+    }
+    .barber-img {
+        width: 300px;
+    }
+    .barbers-desc {
+        width: 40ch;
+        line-height: 1.5rem;
+    }
+    .image-container {
+        margin-top: 2rem;
+        width: 1000px;
+    }
+}
+
+/* xl = (extra large) */
+@media (min-width: 1280px) {
+    .barbers-title {
+        font-size: var(--size-8xl);
+    }
+    .barber-img {
+        width: 300px;
+    }
+    .barber-title {
+        font-size: var(--size-4xl);
+    }
+    .barber-avail, .barber-contact {
+        font-size: var(--size-xl);
+    }
+    .barbers-desc {
+        width: 50ch;
+        line-height: 1.5rem;
+    }
+}
