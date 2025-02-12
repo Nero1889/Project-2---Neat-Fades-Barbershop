@@ -3,10 +3,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 20vh;
 }
 #services-container {
-    position: absolute;
+    position: relative;
     text-align: center;
+
+    height: auto;
 }
 #services-desc {
     animation: opacity .8s;
