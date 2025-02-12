@@ -11,6 +11,7 @@ body::before {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: fixed;
     opacity: 20%;
     z-index: -1;
 }
@@ -18,10 +19,14 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: opacity .4s;
 }
 #services-container {
     position: absolute;
     text-align: center;
+}
+#services-desc {
+    animation: opacity .8s;
 }
 #services-title, #services-desc {
     color: var(--theme-txt);
@@ -34,6 +39,13 @@ body::before {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#services-prices h2.loaded {
+    opacity: 1; 
+    transform: translateY(0); 
 }
 .footer {
     display: flex;
@@ -64,7 +76,6 @@ body::before {
     }
     #services-prices h2 {
         font-size: var(--size-sm);
-        /* font-weight: bold; */
     }
 }
 
