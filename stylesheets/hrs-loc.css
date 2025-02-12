@@ -1,0 +1,118 @@
+body {
+    background-color: var(--bg-color);
+}
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/hrs-locBgImg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 20%;
+    z-index: -1;
+}
+.hrs-loc { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.divide {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.divide.loaded {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+#hrs-loc-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+#hrs-loc-container h2 {
+    color: var(--theme-txt);
+    margin-bottom: .5rem;
+}
+#location-title {
+    color: var(--theme-txt);
+    animation: opacity 1s;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--drk-txt);
+    color: var(--txt);
+    padding: 10px;
+    padding-bottom: 50px;
+    margin-top: 0rem;
+}
+
+/* xxs = (extra extra small) */
+@media (min-width: 320px) {
+    #location-container {
+        margin-top: 15em;
+    }
+    #location-title {
+        font-size: var(--size-4xl);
+    }
+    #hrs-loc-container {
+        font-size: var(--size-sm);
+        width: 350px;
+        margin-top: 3rem;
+    }
+    #map {
+        margin-top: 10rem;
+    }
+}
+
+/* xs = (extra small) */
+@media (min-width: 475px) {
+    #location-title {
+        font-size: var(--size-5xl);
+    }
+    #hrs-loc-container {
+        font-size: var(--size-base);
+    }
+}
+
+/* md = (medium) */
+@media (min-width: 768px) {
+    #location-title {
+        font-size: var(--size-6xl);
+    }
+    #hrs-loc-container {
+        width: 800px;
+        margin-top: 7rem;
+    }
+    #map {
+        margin-top: 20rem;
+    }
+}
+
+/* lg = (large) */
+@media (min-width: 1024px) {
+    #location-title {
+        font-size: var(--size-7xl);
+    }
+    #hrs-loc-container {
+        width: 1000px;
+    }
+}
+
+/* xl = (extra large) */
+@media (min-width: 1280px) {
+    #location-title {
+        font-size: var(--size-8xl);
+    }
+}
