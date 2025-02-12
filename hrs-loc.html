@@ -8,11 +8,7 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/mobile-nav.css">
     <link rel="stylesheet" href="stylesheets/header.css">
-    <link rel="stylesheet" href="stylesheets/hero.css">
-    <link rel="stylesheet" href="stylesheets/story.css">
-    <link rel="stylesheet" href="stylesheets/gallery.css">
-    <link rel="stylesheet" href="stylesheets/location.css">
-    <link rel="stylesheet" href="stylesheets/contact.css">
+    <link rel="stylesheet" href="stylesheets/hrs-loc.css">
     <link rel="stylesheet" href="stylesheets/footer.css">
 </head>
 <body>
@@ -73,12 +69,52 @@
     </div>
     <!-- End of Movile Navigation -->
     <main>
-        <section>
-            <h1>Hours and Location</h1>
+        <section class="hrs-loc container">
+            <div id="location-container">
+                <h1 id="location-title">Location</h1>
+            </div>
+            <div id="hrs-loc-container">
+                <div class="divide">
+                    <h2>Contact & Info</h2>
+                    <p>Phone: (608) 800-1210</p>
+                    <p>Email: neatfadesbarbershop@gmail.com</p>
+                </div>
+                <div class="divide">
+                    <h2>Our Address</h2>
+                    <p>1934 S Stoughton Rd</p>
+                    <p>Madison, WI 53716</p>
+            
+                </div>
+                <div class="divide">
+                    <h2>Opening Hours</h2>
+                    <p>Sun - Closed</p>
+                    <p>Mon - Closed</p>
+                    <p>Tue - 8:00 AM - 6:00 PM</p>
+                    <p>Wed - 8:00 AM - 6:00 PM</p>
+                    <p>Thu - 8:00 AM - 6:00 PM</p>
+                    <p>Fri - 7:00 AM - 7:00 PM</p>
+                    <p>Sat - 6:00 AM - 6:00 PM</p>
+                </div>
+            </div>
         </section>
+        <iframe id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23316.88919112171!2d-89.3120577178186!3d43.07064521577212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8806518fc5f94ea7%3A0x5b54e32e597fed95!2sNeat%20Fades%20Barbershop!5e0!3m2!1sen!2sus!4v1739159307876!5m2!1sen!2sus"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
-    <footer>
-        <script src="index.js"></script>
+    <footer class="footer section">
+        <div class="footer-links">
+            <a title="GitHub" href="https://github.com/Nero1889" target="_blank">
+                <img id="github" src="images/github.png" alt="GitHub Logo">
+            </a>
+            <a title="Gmail" href="mailto:mceclipse1889@gmail.com">
+                <img id="gmail" src="images/gmail.png" alt="Gmail Logo">
+            </a>
+        </div>
+        <h3 id="footer-title">~ Made and Edited By: Raul Luna ~</h3>
+        <h3 id="footer-title">© 2025 Neat Fades Barbershop</h3>
+        <script src="js-docs/index.js"></script>
+        <script src="js-docs/animations.js"></script>
     </footer>
 </body>
 </html>
