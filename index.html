@@ -3,35 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neat Fades Barbershop - Home</title>
-    <link rel="icon" href="images/neatFadesLogo.jpeg">
+    <title>Stardust Computers - Home</title>
+    <link rel="icon" href="images/stardustLogo.png">
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/mobile-nav.css">
     <link rel="stylesheet" href="stylesheets/header.css">
     <link rel="stylesheet" href="stylesheets/hero.css">
-    <link rel="stylesheet" href="stylesheets/story.css">
-    <link rel="stylesheet" href="stylesheets/gallery.css">
-    <link rel="stylesheet" href="stylesheets/info.css">
-    <link rel="stylesheet" href="stylesheets/contact.css">
-    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/parts.css">
+    <link rel="stylesheet" href="stylesheets/create.css">
 </head>
 <body>
     <header class="header">
-        <a class="logo" href="index.html">
-            <img src="images/neatFadesLogo.jpeg" alt="Neat Fades Logo">
-        </a>
-        <h1 id="header-title">Neat Fades<br>Barbershop</h1>
+        <h1 class="txt-rgb" id="header-title">Stardust<br>Computers</h1>
         <nav class="navbar">
             <ul class="header-menu">
                 <li><a class="header-link" href="index.html">Home</a></li>
-                <li><a class="header-link" href="services.html">Services</a></li>
-                <li>
-                    <a class="header-link" href="barb-sche.html">
-                    Barbers and Scheduling</a>
-                </li>
-                <li>
-                    <a class="header-link" href="hrs-loc.html">Hours and Location</a>
-                </li>
+                <li><a class="header-link" href="laptops.html">Laptops</a></li>
+                <li><a class="header-link" href="computers.html">Computers</a></li>
+                <li><a class="header-link" href="accessories.html">Accessories</a></li>
                 <li title="Change Theme!">
                     <button class="theme-toggle" id="sun">☼</button>
                 </li>
@@ -44,14 +33,10 @@
         <nav>
             <ul id="mobile-nav-menu">
                 <li><a class="mobile-link" href="index.html">Home</a></li><hr>
-                <li><a class="mobile-link" href="services.html">Services</a></li><hr>
-                <li>
-                    <a class="mobile-link" href="barb-sche.html">
-                    Barbers and Scheduling</a>
-                </li><hr>
-                <li>
-                    <a class="mobile-link" href="hrs-loc.html">Hours and Location</a>
-                </li><hr>
+                <li><a class="mobile-link" href="laptops.html">Laptops</a></li><hr>
+                <li><a class="mobile-link" href="computers.html">Computers</a></li><hr>
+                <li><a class="mobile-link" href="accessories.html">Accessories</a></li>
+                <hr>
                 <li title="Change Theme!">
                     <button class="theme-toggle" id="sun"><svg
                     xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960
@@ -75,159 +60,93 @@
     <main>
         <section class="hero">
             <div class="img-container">
-                <img id="hero-img" src="images/heroBgImg.png" src="Hero Image">
-                <h1 id="hero-title"><span id="font">- Neat Fades -</span>
-                <br>BARBERSHOP</h1> 
+                <img id="hero-img" src="images/stardustHeroBg.png"
+                src="Stardust Hero Background">
+                <h1 id="hero-title" class="txt-rgb">Stardust Computers</h1> 
             </div>
-            <h3 id="hero-est">Est. 2020</h3>
+            <h3 id="hero-desc">Designing and creating stellar computers.</h3>
         </section>
-        <img class="story-bg-img" src="images/storyBgImg.png"
-        alt="Story Background Img 2">
-        <div class="center-text">
-            <h1 id="story-title">Our Story</h1>
-        </div>
-        <section class="story section">
-            <div class="story-container center">
-                <p id="story-desc">Local Madison Barber Eddie Luna has worked hard to
-                maintain and establish his very own business, Neat Fades Barbershop, here in
-                his hometown of Madison, WI. Against the odds of opening during the COVID-19
-                pandemic in 2020, Neat Fades Barbershop is Eddie's first step in providing
-                quality haircuts for the people in the local Madison community. Additionally,
-                he is providing chances to up-and-coming barbers within the local area with
-                opportunities for barbering growth and development.<br><br>
-            
-                Here at Neat Fades Barbershop, we are dedicated to making people feel
-                confident (and crispy) while providing a home away from home here at the
-                barbershop.</p>
-                <img id="story-img" src="images/storyImg.png" alt="Story">
-            </div>
-        </section>
-        <div class="gallery-bg">                                                <!-- Spacing? --><!-- Spacing? --><!-- Spacing? --><!-- Spacing? --><!-- Spacing? -->      <!-- Spacing? --><!-- Spacing? --><!-- Spacing? --><!-- Spacing? --><!-- Spacing? -->                        <!-- Spacing? -->
-        <div class="center-text">
-            <h1 id="gallery-title">Gallery</h1>
-        </div>
-        <section class="gallery container section">
-                <div id="img-container">
-                    <img class="gallery-imgs" src="images/galleryImg1.jpg"
-                    alt="Gallery Img 1">
-                    <img class="gallery-imgs" src="images/galleryImg2.jpg"
-                    alt="Gallery Img 2">
-                    <img class="gallery-imgs" src="images/galleryImg3.jpg"
-                    alt="Gallery Img 3">
-                    <img class="gallery-imgs" src="images/galleryImg4.jpg"
-                    alt="Gallery Img 4">
-                    <img class="gallery-imgs" src="images/galleryImg5.jpg"
-                    alt="Gallery Img 5">
-                    <img class="gallery-imgs" src="images/galleryImg6.jpg"
-                    alt="Gallery Img 6">
-                    <img class="gallery-imgs" src="images/galleryImg7.jpg"
-                    alt="Gallery Img 7">
-                    <img class="gallery-imgs" src="images/galleryImg8.jpg"
-                    alt="Gallery Img 8">
-                    <img class="gallery-imgs" src="images/galleryImg9.jpg"
-                    alt="Gallery Img 9">
-                </div>
-        </section>
-        </div>
-        <section class="info container section">
-            <div id="card-container">
-                <div class="card">
-                    <div id="img-container">
-                        <img class="card-icon" src="icons/Scissors.png"
-                        alt="Scissor Icon">
+        <section class="create container section">
+            <h1 id="create-title">Create Your Dream Computer</h1>
+            <div class="create-container">
+                <a class="links" href="laptops.html">
+                    <div class="create-cards">
+                        <img class="create-img" src="images/laptops.png" alt="Laptops">
+                        <h1 class="create-title">Laptops</h1>
+                        <p class="create-desc">Whether it's a casual laptop for work, school,
+                        at-home use or gaming, you're sure to find something!</p>
                     </div>
-                    <h3 class="card-title">Special Instructions</h3>
-                    <p class="card-desc">You may want to bring pictures, videos, or
-                    anything else that could assist in describing the haircut style you
-                    want!</p>
-                </div>
-                <div class="card">
-                    <div id="img-container">
-                        <img class="card-icon" src="icons/Wifi.png" alt="Wifi Icon">
+                </a>
+                <a class="links" href="computers.html">
+                    <div class="create-cards">
+                        <img class="create-img" src="images/prebuilts.jpg" alt="Pre Builts">
+                        <h1 class="create-title">Pre-Built</h1>
+                        <p class="create-desc">If you would like a pre-built computer rather
+                        than creating a custom computer, we have many options!
+                        </p>
                     </div>
-                    <h3 class="card-title">Ameneties</h3>
-                    <p class="card-desc">WiFi, TV, Vending Machine, Quality Seats,
-                    Mirrors, lighting and equipment.</p>
-                </div>
-                <div class="card">
-                    <div id="img-container">
-                        <img class="card-icon" src="icons/speak.png" alt="Speak Icon">
+                </a>
+                <a class="links" href="computers.html">
+                    <div class="create-cards">
+                        <img class="create-img" src="images/customBuilt.png"
+                        alt="Custom Built">
+                        <h1 class="create-title">Custom-Built</h1>
+                        <p class="create-desc">Looking for somewhere to begin? We have a vast
+                        set of options for you to build the computer you vision!
+                        </p>
                     </div>
-                    <h3 class="card-title">Spoken Languages</h3>
-                    <p class="card-desc" id="lang">English and Spanish</p>
-                </div>
-                <div class="card">
-                    <div id="img-container">
-                        <img class="card-icon" src="icons/calendar.png" alt="Calendar">
+                </a>
+                <a class="links" href="accessories.html">
+                    <div class="create-cards">
+                        <img class="create-img" src="images/accessories.jpg" alt="">
+                        <h1 class="create-title">Accessories</h1>
+                        <p class="create-desc">Want some accessories alongside your computer
+                        for a proper set-up? We have you covered as well!
+                        </p>
                     </div>
-                    <h3 class="card-title">Appointments</h3>
-                    <p class="card-desc">Walk-in appointments are welcome! However we
-                    encourage you to schedule one in advance!</p>
-                </div>
-                <div class="card">
-                    <div id="img-container">
-                        <img class="card-icon" src="icons/cancellation.png"
-                        alt="Cancellation Icon">
-                   </div>
-                    <h3 class="card-title">Cancellation Policy</h3>
-                    <p class="card-desc">If you need to cancel your appointment, please
-                    do so two hours in advance in order to avoid being put on the list of
-                    no-show or no-call.</p>
-                </div>
+                </a>
             </div>
         </section>
-        <div class="center-text">
-            <h1 id="contact-title">Contact</h1>
-        </div>
-        <img class="contact-bg-img" src="images/contactBgImg.jpg"
-        alt="Contact Background">
-        <section class="contact container section">
-            <div class="contact-container">
-                <form id="form">
-                    <div id="contact1-form">
-                        <input type="text" class="form" name="fname"
-                        placeholder="Name" required="required">
 
-                        <input type="email" class="form" name="email"
-                        placeholder="Email">
-                    </div><br>
-                    <div id="contact2-form">
-                        <input type="text" class="form" name="subject"
-                        required="required" placeholder="Subject">
-                        <input type="text" class="form" name="subject"
-                        required="required" placeholder="Message">
-                    </div>
-                    <div id="btn-container">
-                        <button class="contact-btns" type="submit">Submit</button>
-                        <button class="contact-btns" type="reset">Reset</button>
-                    </div>
-                </form>
+        <div class="rbg-bar">
+            <div class="rgb-container">
+                <img src="icons/speed_35dp_WHITE_FILL0_wght400_GRAD0_opsz40.png"
+                alt="Speed Icon">
+                <h1 class="rgb-bar-title">Performance</h1>
+                <p class="rgb-bar-desc">Speed and optimization at it's best</p>
             </div>
+
+            <div class="rgb-container">
+                <img src="icons/payments_35dp_WHITE_FILL0_wght400_GRAD0_opsz40.png"
+                alt="Dollars Icon">
+                <h1 class="rgb-bar-title">Quality</h1>
+                <p class="rgb-bar-desc">Cutting Edge Technology</p>
+            </div>
+
+            <div class="rgb-container">
+                <img src="icons/public_35dp_WHITE_FILL0_wght400_GRAD0_opsz40.png"
+                alt="Earth Icon">
+                <h1 class="rgb-bar-title">Sustainability</h1>
+                <p class="rgb-bar-desc">Fully Carbon Neutral Facility</p>
+            </div>
+        </div>
+
+        <section class="parts container section">
+            <h1 id="parts-title">Computer Parts</h1>
+            <div id="parts-container">
+                <div class="parts-cards">1</div>
+                <div class="parts-cards">2</div>
+                <div class="parts-cards">3</div>
+            </div>
+
+
         </section>
     </main>
+        
+        
+       
     <footer class="footer section">
-        <a id="top-icon" href="#top">
-            <svg xmlns="http://www.w3.org/2000/svg" height="44px"
-            viewBox="0 -960 960 960" width="44px" fill="#e8eaed">
-            <path d="M440-320h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168Zm40
-            240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54
-            127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5
-            156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0
-            227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227
-            93Zm0-320Z"/></svg>
-        </a>
-        <div class="footer-links">
-            <a title="GitHub" href="https://github.com/Nero1889" target="_blank">
-                <img id="github" src="images/github.png" alt="GitHub Logo">
-            </a>
-            <a title="Gmail" href="mailto:mceclipse1889@gmail.com">
-                <img id="gmail" src="images/gmail.png" alt="Gmail Logo">
-            </a>
-        </div>
-        <h3 id="footer-title">~ Made and Edited By: Raul Luna ~</h3>
-        <h3 id="footer-title">© 2025 Neat Fades Barbershop</h3>
-        <script src="js-docs/index.js"></script>
-        <script src="js-docs/animations.js"></script>
+        <script src="js-docs/main.js"></script>
     </footer>
 </body>
 </html>
