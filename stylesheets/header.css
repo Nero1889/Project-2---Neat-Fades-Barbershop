@@ -25,19 +25,19 @@
     font-size: var(--size-3xl);
     margin-right: 20px;
 }
-#sun {
-    font-size: var(--size-2xl);
-    background-color: transparent;
-    border: none;
-    color: white;
-    transition: color .2s;
-    margin-right: 30px;
-}
 
 /* md = (medium) */
 @media (min-width: 768px) {
-    .navbar {
+    #header-title {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* lg = (large) */
+@media (min-width: 1024px) {
+.navbar {
         width: 500px;
+        margin-right: 4.5rem;
     }
     #header-title {
         font-size: var(--size-2xl);
@@ -46,7 +46,8 @@
         display: flex;
         align-items: center;
         list-style: none;
-        gap: 2em;
+        gap: 2rem;
+        width: 33rem;
     }
     .header-link {
         font-size: var(--size-base);
@@ -54,7 +55,7 @@
         color: white;
         transition: color .2s;
     }
-    .header-link:hover, #sun:hover {
+    .header-link:hover {
         color: #aa6f00;
     }
     #header-bars {
