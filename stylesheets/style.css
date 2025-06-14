@@ -8,10 +8,10 @@
     /* Color Theme */
     --bg-color: #0f0f0f;
     --bg-color2: #181818;
-    --txt: #797979;
-    --txt2: #b71234;
-    --drk-txt: #0f0f0f;
-    --theme-txt: #0f0f0f;
+    --txt: #a6a6a6;
+    --lght-txt: white;
+    --drk-txt: black;
+    --gld: #aa6f00;
 
     /* Sizes */
     --size-xss: 0.5rem;
