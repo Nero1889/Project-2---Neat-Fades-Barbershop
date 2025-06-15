@@ -35,9 +35,8 @@
 
 /* lg = (large) */
 @media (min-width: 1024px) {
-.navbar {
+    .navbar {
         width: 500px;
-        margin-right: 4.5rem;
     }
     #header-title {
         font-size: var(--size-2xl);
