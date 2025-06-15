@@ -28,7 +28,7 @@
     margin-bottom: .5rem;
 }
 #location-title {
-    color: var(--theme-txt);
+    color: var(--lght-txt);
     animation: opacity 1s;
 }
 .footer {
