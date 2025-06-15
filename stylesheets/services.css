@@ -3,22 +3,22 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 20vh;
+    height: 1vh;
 }
 #services-container {
     position: relative;
     text-align: center;
-
     height: auto;
 }
 #services-desc {
     animation: opacity .8s;
 }
 #services-title, #services-desc {
-    color: var(--theme-txt);
+    color: var(--lght-txt);
     margin-top: 20rem;
 }
 #services-prices h2 {
+    padding: 10px;
     font-weight: normal;
     color: var(--txt);
     line-height: 3rem;
@@ -109,6 +109,9 @@
 
 /* lg = (large) */
 @media (min-width: 1024px) {
+    .services {
+        height: 15vh;
+    }
     #services-title {
         font-size: var(--size-7xl);
     }
@@ -130,6 +133,9 @@
 
 /* xl = (extra large) */
 @media (min-width: 1280px) {
+    .services {
+        height: 25vh;
+    }
     #services-title {
         font-size: var(--size-8xl);
     }
