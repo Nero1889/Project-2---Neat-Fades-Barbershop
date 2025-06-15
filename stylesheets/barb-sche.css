@@ -8,6 +8,10 @@
     color: var(--lght-txt);
     animation: opacity 1s;
 } 
+.barbers-img-container {
+    display: flex;
+    justify-content: center;
+}
 .barbers {
     gap: 2rem;
 }
@@ -23,7 +27,7 @@
 }
 .barber-title {
     color: var(--lght-txt);
-    font-weight: normal;
+    font-weight: 500;
     animation: opacity .4s;
 }
 .schedule-btn {
@@ -53,7 +57,6 @@
 }
 .barbers-desc {
     width: 60ch;
-    line-height: 1.4rem;
     font-weight: bold;
     animation: opacity 1.5s;
 }
@@ -88,7 +91,7 @@
 /* xxs = (extra extra small) */
 @media (min-width: 320px) {
     #barbers-container {
-        margin-top: 15em;
+        margin-top: 12em;
     }
     .barbers-title {
         font-size: var(--size-4xl);
@@ -100,18 +103,24 @@
     .barber-title {
         font-size: var(--size-2xl);
         text-align: center;
-        margin-bottom: .5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-weight: bold;
     }
     .barber-avail, .barber-contact {
         font-size: var(--size-base);
-        margin-bottom: .3rem;
+        margin-bottom: 1rem;
         text-align: center;
         width: 20ch;
     }
+    .barber-contact {
+        margin-bottom: .5rem;
+    }
     .barbers-desc {
         font-size: var(--size-base);
-        width: 20ch;
-        margin-bottom: 1rem;
+        width: 25ch;
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
     }
     .image-container {
         width: 300px;
@@ -129,11 +138,10 @@
     }
     .barber-avail, .barber-contact {
         font-size: var(--size-lg);
-        width: auto;
     }
     .barbers-desc {
         font-size: var(--size-base);
-        width: 30ch;
+        width: 35ch;
     }
     .image-container {
         width: 380px;
@@ -155,17 +163,19 @@
         width: auto;
         margin-top: 4rem;
     }
-    .barbers-img-container {
-        width: auto;
-    }
     .barber-img {
         width: 300px;
     }
-    .barbers-title {
+    .barbers-info h2 {
         text-align: left;
     }
-    .barber-avail {
-        text-align: left;
+    .barber-avail, .barber-contact {
+        width: auto;
+        margin: 0;
+    }
+    #sche-here {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
     }
     .barbers-info {
         display: flex;
@@ -174,11 +184,11 @@
     }
     .barbers-desc {
         width: 35ch;
-        line-height: 1.5rem;
     }
     .image-container {
         margin-top: 1rem;
         width: 600px;
+        margin-top: 1rem;
     }
 }
 
@@ -192,7 +202,6 @@
     }
     .barbers-desc {
         width: 40ch;
-        line-height: 1.5rem;
     }
     .image-container {
         margin-top: 2rem;
@@ -216,6 +225,16 @@
     }
     .barbers-desc {
         width: 50ch;
-        line-height: 1.5rem;
+    }
+}
+
+/* 2xl = (two extra large) */
+@media (min-width: 1536px) {
+    .barber-title {
+        font-size: var(--size-5xl);
+    }
+    .barbers-desc {
+        font-size: var(--size-lg);
+        width: 50ch;
     }
 }
