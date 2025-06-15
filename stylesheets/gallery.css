@@ -1,7 +1,7 @@
 .gallery-bg {
     background-color: var(--bg-color2);
     width: 100%;
-    padding-bottom: 1px;   
+    padding-bottom: 10px;
 }
 #gallery-title {
     font-size: var(--size-4xl);
@@ -54,5 +54,8 @@
         font-size: var(--size-6xl);
         margin-top: 4rem;
         margin-bottom: -.5rem;
+    }
+    .gallery-bg {
+        padding-bottom: 40px;
     }
 }
