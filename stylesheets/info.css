@@ -45,14 +45,6 @@
     text-align: center;
 }
 
-/* xxs = (extra extra small)  */
-@media (min-width: 320px) {
-    .card {
-        height: fit-content;
-        padding-bottom: 30px;
-    }
-}
-
 /* sm = (small) */
 @media (min-width: 640px) {
     .card {
