@@ -8,7 +8,10 @@ Including details about services, ameneties, store hours, location, barbers as w
 ## Project Structure:
 
 ### HTML:
-- `index.html`: The main file of the project that contains the user interface and markup
+- `index.html`: The main file of the project that contains the user interface and markup.
+- `services.html`: Provides avaiable services as well as their corresponding prices.
+- `barb-sche.html`: Shows some of the mosst profesional barbers available, as well as some of their work on customers and a button to schedule an appointment!
+- `hrs-loc.html`: Displays store hours, contact (phone number and email), business location, as well as a Google Maps iFrame.
 
 ### CSS:
 - `style.css`: All of the significant styles are located here! Including the font imported, CSS variables (including colors and font sizes), as well as many common classes used throughout the project!
@@ -21,6 +24,9 @@ Including details about services, ameneties, store hours, location, barbers as w
 - `contact.css`
 - `footer.css`
 - `mobile-nav.css`: Mobile navigation displayed if the media query requires it.
+- `services.css`
+- `barb-sche.css`
+- `hrs-loc.css`
 
 ### JavaScript:
 - `main.js`: Toggle for the mobile menu display.
