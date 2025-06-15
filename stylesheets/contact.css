@@ -72,19 +72,10 @@ input::placeholder, .contact-btns {
     color: #bdbdbd;
     text-decoration: none;
     border: none;
+    transition: background-color .25s;
 }
 .contact-btns:hover {
     background-color: #313131;
-}
-.footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--drk-txt);
-    color: var(--txt);
-    padding: 10px;
-    padding-bottom: 50px;
-    margin-top: 5rem;
 }
 
 /* xxs = (extra extra small) */
