@@ -91,11 +91,22 @@ img, picture, video, canvas, svg {
     object-fit: cover;
     opacity: 20%;
 }
+
 @keyframes opacity {
     from {
       opacity: 0%;
     } to {
       opacity: 1;
+    }
+}
+
+@keyframes slideUpAndFade {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%); 
+    } to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
     }
 }
 
