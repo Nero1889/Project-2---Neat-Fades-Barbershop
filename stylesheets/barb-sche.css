@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 .barbers-title {
-    color: var(--theme-txt);
+    color: var(--lght-txt);
     animation: opacity 1s;
 } 
 .barbers {
@@ -22,30 +22,31 @@
     align-items: center;
 }
 .barber-title {
-    color: var(--theme-txt);
+    color: var(--lght-txt);
     font-weight: normal;
     animation: opacity .4s;
 }
 .schedule-btn {
     padding: 10px;
     width: 140px;
-    background-color: var(--theme-txt);
+    background-color: var(--lght-txt);
     border: none;
     margin-bottom: 1rem;
     font-family: "Montserrat", "Roboto", Arial,
     Helvetica, sans-serif;
     animation: opacity .7s;
+    font-weight: 600;
+    transition: background-color .25s;
 }
 .schedule-btn a {
-    color: var(--bg-color);
+    color: var(--drk-txt);
     text-decoration: none;
 }
 .schedule-btn:hover {
     background-color: var(--bg-color);
 }
-
 .schedule-btn:hover a {
-    color: var(--theme-txt);
+    color: var(--lght-txt);
 }
 .barber-avail, .barber-contact {
     animation: opacity 1s;
@@ -92,12 +93,6 @@
     .barbers-title {
         font-size: var(--size-4xl);
         margin-bottom: 2rem;
-    }
-    .barbers {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
     }
     .barbers-info {
         width: 100%;
