@@ -27,20 +27,21 @@
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.445);
     color: var(--drk-txt);
 }
-#hero-title, #hero-desc {
-    animation: slideUpAndFade 1.5s ease-out forwards;
-}
 #hero-title {
     margin-top: 58px;
     text-align: center;
     font-family: "Anton", "Roboto Condensed",
     Arial, sans-serif;
     background: linear-gradient(to left, #0f0f0f,
-    #55514a, #0f0f0f);
+    #424242, #0f0f0f);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 100;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.445);
+    animation: slideUpAndFade .5s ease-out forwards;
+}
+#hero-est {
+    animation: slideUpAndFade 1s ease-out forwards;
 }
 
 /* xxs = (extra extra small)  */
