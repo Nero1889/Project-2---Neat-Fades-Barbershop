@@ -1,24 +1,48 @@
-#top-icon {
-    position: absolute;
-    margin-top: 2.3rem;
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    padding: 25px;
 }
-#github, #gmail {
-    margin: 40px;
-    margin-top: 25px;
-    background-color: #252525;
-    width: 50px;
-    padding: 10px;
-    border-radius: 90px;
-    margin-bottom: 1rem;
+#footer-credits {
+    color: var(--lght-txt);
+    text-align: center;
+    font-size: var(--size-xs);
+    margin-bottom: 1.5rem;
 }
-#github:hover, #gmail:hover {
+#footer-logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.footer img {
+    width: 3rem;
+    background-color: #212121;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color .25s;
+}
+.footer img:hover {
     background-color: #313131;
 }
-.footer a {
-    text-decoration: none;
-} 
-#footer-title {
-    font-weight: normal;
-    font-size: var(--size-base);
-    margin-top: 4px;
+
+/* md = (medium) */
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        gap: 5rem;
+    }
+    #footer-credits {
+        text-align: left;
+        margin-bottom: 0rem;
+    }
+}
+
+/* lg = (large) */
+@media (min-width: 1024px) {
+    .footer {
+        gap: 8rem;
+    }
 }
