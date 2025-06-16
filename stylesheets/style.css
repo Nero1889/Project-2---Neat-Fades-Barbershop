@@ -10,7 +10,7 @@
     --bg-color2: #181818;
     --txt: #a6a6a6;
     --lght-txt: white;
-    --drk-txt: black;
+    --drk-txt: #0b0b0b;
     --gld: #aa6f00;
 
     /* Sizes */
@@ -90,6 +90,19 @@ img, picture, video, canvas, svg {
     height: 100%;
     object-fit: cover;
     opacity: 20%;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
+}
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0); 
+}
+#story-img.animate-on-scroll {
+    transition-delay: 0.2s; 
 }
 
 @keyframes opacity {
